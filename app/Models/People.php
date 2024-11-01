@@ -20,4 +20,8 @@ class People extends Model
         'birthDate'
     ];
 
+    public function interests() {
+        return $this->hasMany(Interest::class);
+    }
+
 }
